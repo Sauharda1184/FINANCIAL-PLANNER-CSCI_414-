@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <h1>Welcome, {{ name }}</h1>
+        <p>What would you like to do today?</p>
+        <ul>
+            <li><a href="{{ url_for('add_budget') }}">Add Budget</a></li>
+            <li><a href="{{ url_for('add_income') }}">Add Income</a></li>
+            <li><a href="{{ url_for('add_expense') }}">Add Expense</a></li>
+            <li><a href="{{ url_for('reports') }}">View Reports</a></li>
+        </ul>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </body>
+</html>

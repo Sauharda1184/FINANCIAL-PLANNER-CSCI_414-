@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Reports</title>
+    </head>
+    <body>
+        <h1>Reports</h1>
+        <h2>Incomes</h2>
+        <ul>
+            {% for income in incomes %}
+            <li>{{ income['name'] }} - ${{ income['dollar_amount'] }} ({{ income['category'] }})</li>
+            {% endfor %}
+        </ul>
+        <h2>Expenses</h2>
+        <ul>
+            {% for expense in expenses %}
+            <li>{{ expense['name'] }} - ${{ expense['dollar_amount'] }} ({{ expense['category'] }})</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
