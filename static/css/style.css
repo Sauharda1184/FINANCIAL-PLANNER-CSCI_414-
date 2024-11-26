@@ -1,5 +1,5 @@
 /* General styles */
-body {
+/**body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 /* Header styles */
-header {
+/**header {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -19,6 +19,7 @@ header h1 {
 }
 
 /* Navigation links */
+/**
 header nav a {
     color: white;
     text-decoration: none;
@@ -30,12 +31,12 @@ header nav a:hover {
 }
 
 /* Main content */
-main {
+/**main {
     padding: 20px;
 }
 
 /* Footer styles */
-footer {
+/**footer {
     text-align: center;
     padding: 10px;
     background-color: #ddd;
@@ -45,7 +46,7 @@ footer {
 }
 
 /* Button styles */
-button {
+/**button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -58,7 +59,7 @@ button:hover {
 }
 
 /* Form styles */
-form {
+/**form {
     margin: 20px 0;
 }
 
@@ -73,4 +74,154 @@ form input, form select {
 form button {
     display: inline-block;
     margin-top: 10px;
+}
+/* General Body Styling */
+body {
+    background-color: #f8f9fa; /* Light grey background for better readability */
+    color: #212529; /* Default dark text color */
+    font-family: 'Roboto', sans-serif; /* Consistent font across the app */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    color: #6c757d;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form input, form select, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Button Group Styling */
+.btn-group a {
+    margin: 5px;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Toast Notification */
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1050;
+}
+
+.toast {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }

@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 <html>
     <head>
         <title>Add Budget</title>
@@ -10,3 +10,15 @@
         </form>
     </body>
 </html>
+-->
+{% extends "base.html" %}
+
+{% block title %}Add Budget{% endblock %}
+
+{% block content %}
+<h1>Add Budget</h1>
+<form method="POST">
+    <button type="submit">Create Budget</button>
+</form>
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+{% endblock %}

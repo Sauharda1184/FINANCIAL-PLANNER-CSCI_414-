@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 <html>
     <head>
         <title>Dashboard</title>
@@ -15,3 +15,46 @@
         <a href="{{ url_for('logout') }}">Logout</a>
     </body>
 </html>
+-->
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Welcome, {{ name }}</h1>
+<p class="text-center">What would you like to do?</p>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Add Budget</h5>
+                <a href="{{ url_for('add_budget') }}" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Add Income</h5>
+                <a href="{{ url_for('add_income') }}" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Add Expense</h5>
+                <a href="{{ url_for('add_expense') }}" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">View Reports</h5>
+                <a href="{{ url_for('reports') }}" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

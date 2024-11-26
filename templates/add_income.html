@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 <html>
     <head>
         <title>Add Income</title>
@@ -24,3 +24,31 @@
         </form>
     </body>
 </html>
+-->
+{% extends "base.html" %}
+
+{% block title %}Add Income{% endblock %}
+
+{% block content %}
+<h1>Add Income</h1>
+<form method="POST">
+    <label for="budget_id">Select Budget:</label>
+    <select name="budget_id" id="budget_id" required>
+        {% for budget in budgets %}
+        <option value="{{ budget['budget_id'] }}">Budget {{ budget['budget_id'] }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="category_id">Select Category:</label>
+    <select name="category_id" id="category_id" required>
+        {% for category in categories %}
+        <option value="{{ category['category_id'] }}">{{ category['name'] }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="text" name="name" placeholder="Income Name" required>
+    <input type="number" name="dollar_amount" placeholder="Amount" step="0.01" required>
+    <button type="submit">Add Income</button>
+</form>
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+{% endblock %}
