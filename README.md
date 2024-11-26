@@ -13,6 +13,6 @@ Generate reports such as spending habits, income history
 SQLITE 3
  
 ## Technology Stack 
-Backend: python, flask 
-Frontend: HTML, CSS, JS 
+### Backend: python, flask 
+### Frontend: HTML, CSS, JS 
 
