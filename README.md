@@ -5,13 +5,13 @@ Implement a financial planner and management systems that allows users to track 
  
 ## Project Features 
 
-### User signup and login 
+ User signup and login 
 
-### Track income and expenses 
+ Track income and expenses 
 
-### Create a budget with different categories 
+ Create a budget with different categories 
 
-### Generate reports such as spending habits, income history 
+ Generate reports such as spending habits, income history 
 
  
 ## Databases 
