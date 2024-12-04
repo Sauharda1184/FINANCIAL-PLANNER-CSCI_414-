@@ -1,0 +1,24 @@
+<!---<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Welcome to the Financial Planner</h1>
+        <a href="{{ url_for('signup') }}">Signup</a> | <a href="{{ url_for('login') }}">Login</a>
+    </body>
+</html>
+-->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-5">Welcome to the Financial Planner</h1>
+    <p class="lead">Easily manage your income, expenses, and budgets.</p>
+    <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg">Get Started</a>
+    <a href="{{ url_for('login') }}" class="btn btn-outline-secondary btn-lg">Login</a>
+</div>
+{% endblock %}
+
