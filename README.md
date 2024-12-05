@@ -21,3 +21,8 @@ SQLITE 3
 ### Backend: python, flask 
 ### Frontend: HTML, CSS, JS 
 
+## System Design
+### FrontEnd User Interface 
+
+- Built by using HTML, CSS and JavaScript
+* The User Interface interacts with forms, buttons, and navigation menus to perform tasks like signup, login, adding budgets, and generating reports.
