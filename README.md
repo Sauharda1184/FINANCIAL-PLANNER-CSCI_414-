@@ -44,7 +44,7 @@ SQLITE 3
 ## Data Workflow 
 Here’s a simple flow of how data moves between the components:
 
-1.User Interaction (Frontend):
+1. User Interaction (Frontend):
 - The user interacts with forms, buttons, and navigation links.
 2. Requests to Backend:
 * The frontend sends user inputs (e.g., signup details, income data) to the backend via HTTP requests.
