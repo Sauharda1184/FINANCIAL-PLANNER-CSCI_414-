@@ -41,7 +41,7 @@ SQLITE 3
 - The app is deployed on Microsoft Azure, which provides a cloud platform for hosting the application and making it accessible online.
 
 ## Image 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]
+![Screenshot of the deployed web app]
 
-(<img width="1440" alt="Screenshot 2024-12-05 at 10 43 16 AM" src="https://github.com/user-attachments/assets/7fe64b1d-b8db-4100-a897-fc5e7b93e75b">)
+<img width="1440" alt="Screenshot 2024-12-05 at 10 43 16 AM" src="https://github.com/user-attachments/assets/7fe64b1d-b8db-4100-a897-fc5e7b93e75b">
 
